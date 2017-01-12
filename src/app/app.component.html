@@ -1,3 +1,63 @@
-<h1>
-  {{title}}
-</h1>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+   <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+         <span class="mdl-layout-title">Dungeons & Dragons Player Sheet</span>
+         <div class="mdl-layout-spacer"></div>
+         <div class="mdl-textfield mdl-js-textfield">
+           <input class="mdl-textfield__input" type="text" id="text1">
+           <label class="mdl-textfield__label" for="text1">Enter your character name</label>
+         </div>
+      </div>
+   </header>
+   <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Material Design Tutorial</span>
+      <nav class="mdl-navigation">
+         <a class="mdl-navigation__link" href="">Home</a>
+         <a class="mdl-navigation__link" href="">About</a>
+      </nav>
+   </div>
+   <main class="mdl-layout__content">
+     <div class="mdl-card mdl-shadow--4dp">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Basic Information</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="class_and_level">
+            <label class="mdl-textfield__label" for="class_and_level">Class & Level</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="background">
+            <label class="mdl-textfield__label" for="background">Background</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="player_name">
+            <label class="mdl-textfield__label" for="player_name">Player Name</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="faction">
+            <label class="mdl-textfield__label" for="faction">Faction</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="race">
+            <label class="mdl-textfield__label" for="race">Race</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="alignment">
+            <label class="mdl-textfield__label" for="alignment">Alignment</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="experience_points">
+            <label class="mdl-textfield__label" for="experience_points">Experience Points</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="dci_number">
+            <label class="mdl-textfield__label" for="dci_number">DCI Number</label>
+          </div>
+      </div>
+      <div class="mdl-card__actions">
+        <a href="#">Edit</a>
+      </div>
+    </div>
+  </main>
+</div>

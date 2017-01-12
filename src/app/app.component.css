@@ -1,0 +1,10 @@
+.mdl-textfield{
+  margin: 10px;
+}
+.mdl-card{
+  width: 100%;
+  margin: 10px 0px;
+}
+.mdl-card__actions{
+    margin: 10px;
+}
