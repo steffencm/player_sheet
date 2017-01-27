@@ -4,16 +4,16 @@
          <span class="mdl-layout-title">Dungeons & Dragons Player Sheet</span>
          <div class="mdl-layout-spacer"></div>
          <div class="mdl-textfield mdl-js-textfield">
-           <input class="mdl-textfield__input" type="text" id="text1">
+           <input class="mdl-textfield__input" [(ngModel)]="player.characterName" type="text" id="text1">
            <label class="mdl-textfield__label" for="text1">Enter your character name</label>
          </div>
       </div>
    </header>
    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Material Design Tutorial</span>
+      <span class="mdl-layout-title">Dengeons & Dragons Player Management</span>
       <nav class="mdl-navigation">
-         <a class="mdl-navigation__link" href="">Home</a>
-         <a class="mdl-navigation__link" href="">About</a>
+         <a class="mdl-navigation__link" href="">Load Player</a>
+         <a class="mdl-navigation__link" href="">Join Game</a>
       </nav>
    </div>
    <main class="mdl-layout__content">
@@ -23,35 +23,35 @@
         </div>
         <div class="mdl-card__supporting-text">
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="class_and_level">
-            <label class="mdl-textfield__label" for="class_and_level">Class & Level</label>
+            <input class="mdl-textfield__input" [(ngModel)]="player.classAndLevel" type="text" id="class_and_level">
+            <label class="mdl-textfield__label"  for="class_and_level">Class & Level</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="background">
+            <input class="mdl-textfield__input" [(ngModel)]="player.background" type="text" id="background">
             <label class="mdl-textfield__label" for="background">Background</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="player_name">
+            <input class="mdl-textfield__input" [(ngModel)]="player.playerName" type="text" id="player_name">
             <label class="mdl-textfield__label" for="player_name">Player Name</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="faction">
+            <input class="mdl-textfield__input" [(ngModel)]="player.faction" type="text" id="faction">
             <label class="mdl-textfield__label" for="faction">Faction</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="race">
+            <input class="mdl-textfield__input" [(ngModel)]="player.race" type="text" id="race">
             <label class="mdl-textfield__label" for="race">Race</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="alignment">
+            <input class="mdl-textfield__input" [(ngModel)]="player.alignment" type="text" id="alignment">
             <label class="mdl-textfield__label" for="alignment">Alignment</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="experience_points">
+            <input class="mdl-textfield__input" [(ngModel)]="player.experiencePoints" type="text" id="experience_points">
             <label class="mdl-textfield__label" for="experience_points">Experience Points</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <input class="mdl-textfield__input" type="text" id="dci_number">
+            <input class="mdl-textfield__input" [(ngModel)]="player.dciNumber" type="text" id="dci_number">
             <label class="mdl-textfield__label" for="dci_number">DCI Number</label>
           </div>
       </div>
