@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Player } from '../player.model';
+import { PlayerService } from '../services/player-service.service';
 
 
 @Component({
@@ -10,26 +11,21 @@ import { Player } from '../player.model';
 export class BasicInfoComponent implements OnInit {
 
     @Input() player: Player;
+    player_service: PlayerService;
     editable: boolean = false;
+
+    constructor(player_service: PlayerService){
+      this.player_service = player_service;
+    }
 
 
     ngOnInit(): void{
-      this.player = this.makeLoad();
+      this.player = this.getPlayer();
+      console.log('OnINit');
     }
 
-    makeLoad(): Player {
-      let player: Player = {
-        characterName: 'Merle HighChurch',
-        classAndLevel: 'Cleric 12',
-        background: 'Pagan',
-        playerName: 'Chris Steffen',
-        faction: 'Rebels',
-        race: 'Dwarf',
-        alignment: 'Chaotic Good',
-        experiencePoints: '1999',
-        dciNumber:'1827',
-      }
-      return player;
+    getPlayer(): Player {
+      return this.player_service.getPlayer(1);
     }
 
 }

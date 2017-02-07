@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from '@angular/material';
 import { MainStatsComponent } from './main-stats/main-stats.component';
 import { BasicInfoComponent } from './basic-info/basic-info.component';
+import { PlayerService } from './services/player-service.service';
 
 
 @NgModule({
@@ -21,7 +22,7 @@ import { BasicInfoComponent } from './basic-info/basic-info.component';
     HttpModule,
     MaterialModule.forRoot()
   ],
-  providers: [],
+  providers: [PlayerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
