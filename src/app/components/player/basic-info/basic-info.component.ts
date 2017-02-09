@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Player } from '../player.model';
-import { PlayerService } from '../services/player-service.service';
+import { Player } from '../../../player.model';
+import { PlayerService } from '../../../services/player-service.service';
 
 
 @Component({
@@ -21,7 +21,6 @@ export class BasicInfoComponent implements OnInit {
 
     ngOnInit(): void{
       this.player = this.getPlayer();
-      console.log('OnINit');
     }
 
     getPlayer(): Player {
@@ -29,3 +28,4 @@ export class BasicInfoComponent implements OnInit {
     }
 
 }
+
