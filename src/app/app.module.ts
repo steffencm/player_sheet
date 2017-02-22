@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { MaterialModule } from '@angular/material';
 import { PlayerService } from './services/player-service.service';
+import { LogService } from './services/log.service';
 import { PageNotFoundComponent } from  './components/page-not-found.component';
 import { PlayerComponent } from './components/player/player.component';
 import { BasicInfoComponent } from './components/player/basic-info/basic-info.component';
@@ -37,7 +38,7 @@ import { MainStatsComponent } from './components/player/main-stats/main-stats.co
     MaterialModule.forRoot(),
     RouterModule.forRoot(routes)
   ],
-  providers: [PlayerService],
+  providers: [PlayerService, LogService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
