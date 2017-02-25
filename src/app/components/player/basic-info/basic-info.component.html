@@ -4,40 +4,40 @@
    </div>
    <div class="mdl-card__supporting-text">
      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-       <input class="mdl-textfield__input" [(ngModel)]="player.classAndLevel" type="text" id="class_and_level"disabled={{!editable}} >
+       <input class="mdl-textfield__input" [(ngModel)]="basicInfo.classAndLevel" type="text" id="class_and_level"disabled={{!editable}} >
        <label class="mdl-textfield__label"  for="class_and_level">Class & Level</label>
      </div>
      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-       <input class="mdl-textfield__input" [(ngModel)]="player.background" type="text" id="background" disabled={{!editable}} >
+       <input class="mdl-textfield__input" [(ngModel)]="basicInfo.background" type="text" id="background" disabled={{!editable}} >
        <label class="mdl-textfield__label" for="background">Background</label>
      </div>
      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-       <input class="mdl-textfield__input" [(ngModel)]="player.playerName" type="text" id="player_name" disabled={{!editable}}>
-       <label class="mdl-textfield__label" for="player_name">Player Name</label>
+       <input class="mdl-textfield__input" [(ngModel)]="basicInfo.basicInfoName" type="text" id="basicInfo_name" disabled={{!editable}}>
+       <label class="mdl-textfield__label" for="basicInfo_name">basicInfo Name</label>
      </div>
      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-       <input class="mdl-textfield__input" [(ngModel)]="player.faction" type="text" id="faction" disabled={{!editable}}>
+       <input class="mdl-textfield__input" [(ngModel)]="basicInfo.faction" type="text" id="faction" disabled={{!editable}}>
        <label class="mdl-textfield__label" for="faction">Faction</label>
      </div>
      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-       <input class="mdl-textfield__input" [(ngModel)]="player.race" type="text" id="race" disabled={{!editable}}>
+       <input class="mdl-textfield__input" [(ngModel)]="basicInfo.race" type="text" id="race" disabled={{!editable}}>
        <label class="mdl-textfield__label" for="race">Race</label>
      </div>
      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-       <input class="mdl-textfield__input" [(ngModel)]="player.alignment" type="text" id="alignment" disabled={{!editable}}>
+       <input class="mdl-textfield__input" [(ngModel)]="basicInfo.alignment" type="text" id="alignment" disabled={{!editable}}>
        <label class="mdl-textfield__label" for="alignment">Alignment</label>
      </div>
      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-       <input class="mdl-textfield__input" [(ngModel)]="player.experiencePoints" type="text" id="experience_points" disabled={{!editable}}>
+       <input class="mdl-textfield__input" [(ngModel)]="basicInfo.experiencePoints" type="text" id="experience_points" disabled={{!editable}}>
        <label class="mdl-textfield__label" for="experience_points">Experience Points</label>
      </div>
      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-       <input class="mdl-textfield__input" [(ngModel)]="player.dciNumber" type="text" id="dci_number" disabled={{!editable}}>
+       <input class="mdl-textfield__input" [(ngModel)]="basicInfo.dciNumber" type="text" id="dci_number" disabled={{!editable}}>
        <label class="mdl-textfield__label" for="dci_number">DCI Number</label>
      </div>
  </div>
  <div class="mdl-card__actions">
-   <a href="#" (click)="editable = !editable">
+   <a (click)="editable = !editable">
      <div *ngIf="!editable">
        Edit
      </div>
